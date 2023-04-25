@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="../img/icon.jpg" />
+    <link rel="stylesheet" href="../style/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <div class="burg">
+            <div class="burger"></div>
+            <a href="../index.html" class="nav__icon-link-burg">
+              <img src="../img/icon.jpg" class="nav__icon" alt="" />
+            </a>
+          </div>
+
+          <div class="nav_content">
+            <div class="close_mod"></div>
+            <a href="../index.html" class="nav__icon-link">
+              <img src="../img/icon.jpg" class="nav__icon" alt="" />
+            </a>
+
+            <ul class="nav_list">
+              <li><a href="#" class="nav__list-link">Рабочие </a></li>
+              <li><a href="../pages/trucks.html" class="nav__list-link">Грузовики</a></li>
+              <li><a href="../pages/about.html" class="nav__list-link">Отчеты </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="workers">
+        <div class="container">
+          <div class="search">
+            <input class="search_input" type="search" placeholder="Поиск" />
+          </div>
+          <div class="workers_content">
+            <table>
+              <thead>
+                <tr>
+                  <th class="worker__title">Логин ID</th>
+                  <th class="worker__title">Имя</th>
+                  <th class="worker__title">Фамилия</th>
+                  <th class="worker__title">Номер Телефона</th>
+                  <th class="worker__title">Должность</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td class="worker_info">Mirazim</td>
+                  <td class="worker_info">Mirsodiqov</td>
+                  <td class="worker_info">+998(90) 000 00 01</td>
+                  <td class="worker_info">Начальник отдела</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td class="worker_info">Mirazim</td>
+                  <td class="worker_info">Mirsodiqov</td>
+                  <td class="worker_info">+998(90) 000 00 01</td>
+                  <td class="worker_info">Начальник отдела</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td class="worker_info">Mirazim</td>
+                  <td class="worker_info">Mirsodiqov</td>
+                  <td class="worker_info">+998(90) 000 00 01</td>
+                  <td class="worker_info">Начальник отдела</td>
+                </tr>
+              </tbody>
+
+             
+            </table>
+
+            <button class="modal_reg">Новый сотрудник</button>
+          
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+    <div class="worker__registration">
+      <div class="reg_item">
+        <div type="button" class="modal__back" id="back"></div>
+        <h5 class="reg__title">Регистрация рабочего:</h5>
+        <div class="reg_input">
+          <label for="name" class="inputdescr">Имя </label>
+          <input type="text" class="search__input" id="name" />
+          <label for="sourname" class="inputdescr">Фамилия </label>
+          <input type="text" class="search__input" id="sourname" />
+          <label for="num" class="inputdescr">Номер Телефона </label>
+          <input type="text" class="search__input" id="num" />
+          <label for="work" class="inputdescr">Должность</label>
+          <input type="text" class="search__input" id="work" />
+          <button class="registr_btn" >Подтвердить</button>
+        </div>
+      </div>
+    </div>
+    <script>
+
+
+
+
+
+let btn = document.querySelector(".modal__back");
+btn.onclick = function () {
+  document.querySelector(".modal").style.display = "none";
+};
+
+let burger = document.querySelector(".burger");
+burger.onclick = function () {
+  document.querySelector(".nav_content").style.transform = "translateX(0)"
+};
+
+let close = document.querySelector(".close_mod");
+close.onclick = function () {
+  document.querySelector(".nav_content").style.transform = "translateX(-100%)";
+};
+
+
+
+
+
+
+      
+     let reg = document.querySelector('.modal_reg')
+     reg.onclick = function (e) {
+        document.querySelector('.worker__registration').style.display="flex"
+     }
+      
+
+     let close_reg = document.querySelector('.modal__back')
+     close_reg.onclick = function (e) {
+        document.querySelector('.worker__registration').style.display="none"
+     }
+    
+    </script>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

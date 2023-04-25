@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="../img/icon.jpg" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Not Found</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <div class="burg">
+            <div class="burger"></div>
+            <a href="../index.html" class="nav__icon-link-burg">
+              <img src="../img/icon.jpg" class="nav__icon" alt="" />
+            </a>
+          </div>
+
+          <div class="nav_content">
+            <div class="close_mod"></div>
+            <a href="../index.html" class="nav__icon-link">
+              <img src="../img/icon.jpg" class="nav__icon" alt="" />
+            </a>
+
+            <ul class="nav_list">
+              <li>
+                <a href="../pages/workers.html" class="nav__list-link"
+                  >Рабочие
+                </a>
+              </li>
+              <li>
+                <a href="../pages/trucks.html" class="nav__list-link"
+                  >Грузовики</a
+                >
+              </li>
+              <li>
+                <a href="../pages/about.html" class="nav__list-link">Отчеты </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h3 class="nf_title">Ошибка 404.Эта страница не найлена.</h3>
+      <a href="../index.html" class="nf_link">Перейти на главную страницу</a>
+    </div>
+  </body>
+</html>
+
+<script>
+  let btn = document.querySelector(".modal__back");
+  btn.onclick = function () {
+    document.querySelector(".modal").style.display = "none";
+  };
+
+  let burger = document.querySelector(".burger");
+  burger.onclick = function () {
+    document.querySelector(".nav_content").style.transform = "translateX(0)";
+  };
+
+  let close = document.querySelector(".close_mod");
+  close.onclick = function () {
+    document.querySelector(".nav_content").style.transform =
+      "translateX(-100%)";
+  };
+</script>

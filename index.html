@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="img/icon.jpg" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <title>Taiba Trade</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <div class="burg">
+            <div class="burger"></div>
+            <a href="" class="nav__icon-link-burg">
+              <img src="img/icon.jpg" class="nav__icon" alt="" />
+            </a>
+          </div>
+
+          <div class="nav_content">
+            <div class="close_mod"></div>
+            <a href="" class="nav__icon-link">
+              <img src="img/icon.jpg" class="nav__icon" alt="" />
+            </a>
+
+            <ul class="nav_list">
+              <li><a href="pages/workers.html" class="nav__list-link">Рабочие </a></li>
+              <li><a href="pages/trucks.html" class="nav__list-link">Грузовики</a></li>
+              <li><a href="pages/about.html" class="nav__list-link">Отчеты </a></li>
+            </ul>
+            <button type="button" class="nav_reg-item">Вход</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="news">
+        <div class="container">
+          <h2 class="news_title">Новости:</h2>
+
+          <div class="news__logistics">
+            <div class="news__logistic-list">
+              <p class="logistic__list-text">
+                Новый сотрудник: <span class="worker_id">1111 </span>-
+                <span class="worker_name"> Mirazim Mirsodiqov </span
+                ><span class="worker_status">Был добавлен</span>
+              </p>
+              <p class="logistic__list-date">06.04.2023</p>
+            </div>
+            <div class="news__logistic-list">
+              <p class="logistic__list-text">
+                Новый сотрудник: <span class="worker_id">1112 </span>-
+                <span class="worker_name"> Mirazim Mirsodiqov </span
+                ><span class="worker_status">Был добавлен</span>
+              </p>
+              <p class="logistic__list-date">06.04.2023</p>
+            </div>
+            <div class="news__logistic-list">
+              <p class="logistic__list-text">
+                Новый сотрудник: <span class="worker_id">1113 </span>-
+                <span class="worker_name"> Mirazim Mirsodiqov </span
+                ><span class="worker_status">Был добавлен</span>
+              </p>
+              <p class="logistic__list-date">06.04.2023</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="btn">
+      <div class="modal_win">
+        <h4 class="modal_win-title">Вход:</h4>
+        <form class="form" action="">
+          <label class="modal_win-lable" for="">
+            <p class="modal__win-text">Имя пользователя:</p>
+            <input class="modal__win-input" type="text" />
+          </label>
+          <label class="modal_win-lable" for="">
+            <p class="modal__win-text">Пароль:</p>
+            <input class="modal__win-input" type="password" />
+          </label>
+          <div class="btns">
+            <div type="button" class="modal__back" id="back"></div>
+            <button class="modal__submit">Войти</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
