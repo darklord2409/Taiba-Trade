@@ -22,6 +22,7 @@ li {
 .container {
     width: 90%;
     margin: auto;
+    position: relative;
 }
 
 .close_mod {
@@ -29,7 +30,7 @@ li {
 }
 
 .nav {
-    background: #14783ca8;
+    background: #14783c;
 }
 
 .burger {
@@ -41,6 +42,8 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 99999999 !important;
 }
 
 .nav__icon {
@@ -523,6 +526,7 @@ td {
 }
 
 th {
+
     background-color: #f2f2f2;
 }
 
@@ -549,7 +553,16 @@ tr:hover {
     font-weight: 500;
     color: #14783C;
 }
+.tableFixHead          { overflow: auto; height: 500px; }
+.tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
 
+/* Just common table stuff. Really. */
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px 16px; }
+th     { background:#eee; }
+thead{
+    background: rgb(176, 175, 175);
+}
 
 @media (max-width:1280px) {
     .logistics__list-info {
@@ -579,7 +592,6 @@ tr:hover {
     .nav__list-link {
         font-size: 17px;
     }
-
     .nav_reg-item {
         font-size: 17px;
         padding: 12px 15px;
@@ -792,6 +804,9 @@ tr:hover {
 
 
 @media (max-width:523px) {
+    thead {
+        background: #FFFFFF;
+    }
     .ligistic_file-label {
         margin: auto;
         left: auto;
@@ -824,14 +839,14 @@ tr:hover {
     td,
     tr {
       display: block;
-      border: none;
     }
     table{
         display: flex;
-        overflow: scroll;
     }
     tbody{
         display: flex;
+        overflow: scroll;
+        width: 100%;
     }
     .nf_title{
         font-size: 17px;
@@ -844,6 +859,13 @@ tr:hover {
     .login{
         width: 80%;
     }
+    .tableFixHead{
+        height: max-content;
+    }
+   table{
+        display: flex;
+    }
+    
 }
 
 @media (max-width:400px) {
